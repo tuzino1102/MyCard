@@ -373,8 +373,8 @@
   <div class="qr-section">
     <div class="qr-frame"><div id="qrcode"></div></div>
     <div class="qr-caption">
-      <div class="main">掃描加入聯絡資訊</div>
-      <div class="sub">Scan to save contact</div>
+      <div class="main">掃描查看完整名片</div>
+      <div class="sub">Scan to view profile</div>
     </div>
   </div>
 
@@ -734,7 +734,8 @@ var vcard = [
   "END:VCARD"
 ].join("\n");
 
-renderQRCode("qrcode", vcard, 176);
+var pageUrl = "https://tuzino1102.github.io/MyCard/";
+renderQRCode("qrcode", pageUrl, 176);
 </script>
 
 </body>
