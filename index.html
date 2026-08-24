@@ -253,6 +253,35 @@
     color:var(--text-faint);
     text-transform:uppercase;
   }
+
+  /* ---- narrow-phone tightening: keep single-line labels/values from wrapping ---- */
+  @media (max-width: 400px){
+    body{ padding:20px 10px; }
+    .card-top{ padding:24px 18px 18px; }
+    .section{ padding:18px 18px; }
+    .qr-section{ padding:22px 18px; }
+    .eyebrow{ font-size:10px; letter-spacing:0.14em; gap:6px; }
+    .glyph{ width:48px; height:48px; }
+    .name-block h1{ font-size:26px; }
+    .name-block .dept{ font-size:12px; }
+    .tag-row{ gap:6px; }
+    .tag{ font-size:11px; padding:4px 8px; letter-spacing:0.01em; }
+    .intro{ font-size:12.5px; }
+    .role-log li{ grid-template-columns:34px 1fr; gap:8px; }
+    .role-log .yr{ font-size:10.5px; }
+    .role-log .role{ font-size:12.5px; }
+    .twitch-block{ padding:12px 12px; gap:10px; }
+    .twitch-text .value{ font-size:13px; }
+    .contact-row{ gap:10px; }
+    .contact-icon{ width:28px; height:28px; }
+    .contact-text .value{ font-size:12px; }
+  }
+  @media (max-width: 340px){
+    .name-block h1{ font-size:23px; }
+    .tag{ font-size:10px; padding:3px 7px; }
+    .contact-text .value{ font-size:11px; }
+    .role-log .role{ font-size:11.5px; }
+  }
 </style>
 </head>
 <body>
